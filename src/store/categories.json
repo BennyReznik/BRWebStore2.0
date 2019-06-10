@@ -1,14 +1,14 @@
 [
   {
-    "id": "100",
+    "id": "1",
     "name": "Electric"
   },
   {
-    "id": "200",
+    "id": "2",
     "name": "Electronics"
   },
   {
-    "id": "300",
+    "id": "3",
     "name": "Furniture"
   }
 ]
