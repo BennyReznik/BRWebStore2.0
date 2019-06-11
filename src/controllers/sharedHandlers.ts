@@ -1,10 +1,10 @@
 import { Request, Response, NextFunction } from "express";
 
-const checkIfIdIsNumber = async (
+const checkIfIdIsNumber = (
   req: Request,
   res: Response,
   next?: NextFunction
-) => {
+): Promise<any> => {
   if (isNaN(req.params.id)) {
     const err = new Error("id is not a number");
     err.name = "400";
@@ -16,6 +16,8 @@ const checkIfIdIsNumber = async (
       next();
     }
   }
+
+  return Promise.resolve();
 };
 
 export { checkIfIdIsNumber };
