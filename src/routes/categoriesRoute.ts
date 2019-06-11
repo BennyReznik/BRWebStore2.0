@@ -11,7 +11,7 @@ import {
   checkIfIdIsNumber,
   categoryNotFound
 } from "../controllers";
-import { wrapAsyncAndSend, wrapAsync } from "../utils/async";
+import { wrapAsync, wrapAsyncAndSend } from "../utils/async";
 
 const router = express.Router();
 
